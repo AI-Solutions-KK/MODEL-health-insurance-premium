@@ -4,9 +4,28 @@ A production-grade machine learning inference service for predicting health insu
 The model is exposed as a REST API using FastAPI and is designed to be consumed by any client
 (web applications, backend services, mobile apps, or external systems).
 
+---
 This repository contains only the model inference layer.
 No UI or frontend logic is included.
 
+Refer below for UI or frontend logic & Live app test
+
+---
+- REPO: For model Deployment: Main model Repo 
+
+https://github.com/AI-Solutions-KK/health-insurance-premium-model-api.git
+
+
+- REPO : UI-APP - Practical Model use case 
+
+https://github.com/AI-Solutions-KK/health-insurance-premium-prediction-ui.git
+
+
+- APP : Live Deployed App: Model Test 
+
+https://health-insurance-premium-ui-gvhvh4esfqe9emb5.centralindia-01.azurewebsites.net/
+
+---
 ---
 ## Local Test Passed
 ![local_test](local_test_passed.png)
