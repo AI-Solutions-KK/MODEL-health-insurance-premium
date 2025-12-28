@@ -36,7 +36,7 @@ https://health-insurance-premium-ui-gvhvh4esfqe9emb5.centralindia-01.azurewebsit
 
 ---
 
-## Live url
+## Model is live
 ![local_test](live_url.png)
 
 ---
@@ -44,8 +44,31 @@ https://health-insurance-premium-ui-gvhvh4esfqe9emb5.centralindia-01.azurewebsit
 ## Live Test Passed
 ![local_test](live_test_2.png)
 
+## 🔐 API Management (APIM)
+
+This project uses **API Management (APIM)** as a secure gateway in front of the machine learning model.
+
+### Purpose of APIM
+- Prevents direct public access to the model service
+- Enforces **API key–based authentication**
+- Enables rate limiting, monitoring, and future versioning
+- Protects model infrastructure and intellectual property
+
+### Access Flow
+```text
+Client (Web / Mobile / Backend)
+        |
+        |  HTTPS (JSON) + Subscription Key
+        v
+Azure API Management (APIM)
+        |
+        v
+FastAPI Model Inference Service
+        |
+        v
+Trained ML Models + Scalers
+
 ---
-## Use Case
 
 This service predicts health insurance premiums based on:
 - Demographics
@@ -70,7 +93,7 @@ Trained ML Models + Scalers
 ---
 ````
 ## Project Structure
-````
+
 health-insurance-premium-model-api/
 ├── api/
 │   ├── __init__.py
