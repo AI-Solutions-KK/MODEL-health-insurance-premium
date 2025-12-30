@@ -23,9 +23,13 @@ https://github.com/AI-Solutions-KK/health-insurance-premium-prediction-ui.git
 
 - APP : Live Deployed App: Model Test 
 
+LINK :
 https://health-insurance-premium-ui-gvhvh4esfqe9emb5.centralindia-01.azurewebsites.net/
 
 ---
+App Snap Shot 
+![local_test](snap2.png)
+
 ---
 ## Local Test Passed
 ![local_test](local_test_passed.png)
